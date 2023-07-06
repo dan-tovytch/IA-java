@@ -1,7 +1,7 @@
 public class User {
-    private int age;
-    private int height;
-    private int weight;
+    private final int age;
+    private final int height;
+    private final int weight;
 
     public User(int age, int height, int weight) {
         this.age = age;

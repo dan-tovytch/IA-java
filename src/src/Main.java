@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -42,13 +43,13 @@ public class Main {
         Foods foods = new Foods();
 
         // Carregar os alimentos a partir do arquivo CSV
-        String filePath = "caminho/do/arquivo/alimentos.csv";
+        String filePath = "../data/alimentos.csv";
         foods.loadFoodsFromFile(filePath);
 
         // Obter a lista de alimentos
         List<Food> foodList = foods.getFoodList();
 
-        // Exemplo de como acessar os alimentos carregados
+        // Exibir a lista de alimentos
         System.out.println("\nLista de Alimentos:");
         for (Food food : foodList) {
             System.out.println(food.getName());
