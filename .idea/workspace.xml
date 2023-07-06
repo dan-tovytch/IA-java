@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c020247-847f-4759-af5b-a84f541c828a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/foods.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/foods.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/foods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/foods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/ia.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/ia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Foods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Foods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/foods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/foods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/ia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/ia.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +46,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-20",
     "last_opened_file_path": "C:/Users/pedro/Desktop/IA-Java",
     "list.type.of.created.stylesheet": "CSS",
@@ -57,7 +60,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pedro\Desktop\IA-Java\data" />
+      <recent name="C:\Users\pedro\Desktop\IA-Java" />
+      <recent name="C:\Users\pedro\Desktop\IA-Java\src\data" />
+      <recent name="C:\Users\pedro\Desktop\IA-Java\src\src" />
+      <recent name="C:\Users\pedro\Desktop\IA-Java\test" />
+      <recent name="C:\Users\pedro\Desktop\IA-Java\src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -68,7 +75,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688585680223</updated>
-      <workItem from="1688585681008" duration="1317000" />
+      <workItem from="1688585681008" duration="1554000" />
+      <workItem from="1688611463295" duration="5432000" />
     </task>
     <servers />
   </component>

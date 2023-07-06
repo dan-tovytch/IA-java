@@ -1,5 +1,5 @@
-import java.util.List;
 import java.util.Scanner;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -43,7 +43,7 @@ public class Main {
         Foods foods = new Foods();
 
         // Carregar os alimentos a partir do arquivo CSV
-        String filePath = "../data/alimentos.csv";
+        String filePath = "data/alimentos.csv";
         foods.loadFoodsFromFile(filePath);
 
         // Obter a lista de alimentos
@@ -59,7 +59,44 @@ public class Main {
             System.out.println();
         }
 
+        // Loop de diálogo
+        System.out.println("Digite suas perguntas sobre nutrição (ou 'sair' para encerrar):");
+        String input = scanner.nextLine();
+
+        while (!input.equalsIgnoreCase("sair")) {
+            // Processar a pergunta e fornecer a resposta da IA
+            String respostaIA = processarPergunta(input);
+
+            // Exibir a resposta
+            System.out.println(respostaIA);
+
+            // Solicitar a próxima pergunta
+            input = scanner.nextLine();
+        }
+
         // Fechar o scanner
         scanner.close();
     }
+
+    // Método para processar a pergunta e fornecer a resposta adequada
+    private static String processarPergunta(String pergunta) {
+        // Converter a pergunta para minúsculas para facilitar o processamento
+        pergunta = pergunta.toLowerCase();
+
+        // Lógica para processar a pergunta e fornecer a resposta
+        String resposta;
+
+        if (pergunta.contains("proteína")) {
+            resposta = "A proteína é um nutriente essencial para a construção e reparação dos tecidos do corpo. Alguns alimentos ricos em proteína são carne, peixe, ovos, laticínios, leguminosas e nozes.";
+        } else if (pergunta.contains("carboidrato")) {
+            resposta = "Os carboidratos são uma importante fonte de energia para o corpo. Alguns alimentos ricos em carboidratos são pães, massas, arroz, cereais, frutas e vegetais.";
+        } else if (pergunta.contains("gordura")) {
+            resposta = "Existem diferentes tipos de gorduras, como as gorduras saturadas, insaturadas e trans. É importante consumir gorduras saudáveis em moderação, como as encontradas em peixes, abacate, azeite de oliva e nozes.";
+        } else {
+            resposta = "Desculpe, não tenho informações específicas sobre essa pergunta. Por favor, consulte um nutricionista ou profissional de saúde para obter orientações mais precisas.";
+        }
+
+        return resposta;
+    }
+
 }
