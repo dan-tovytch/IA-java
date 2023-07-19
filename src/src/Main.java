@@ -39,29 +39,12 @@ public class Main {
             System.out.println("É importante buscar orientação de um profissional de saúde para um plano adequado de emagrecimento.");
         }
 
-        // Criar uma instância de Foods
-        Foods foods = new Foods();
-
-        // Carregar os alimentos a partir do arquivo CSV
-        String filePath = "data/alimentos.csv";
-        foods.loadFoodsFromFile(filePath);
-
-        // Obter a lista de alimentos
-        List<Food> foodList = foods.getFoodList();
-
-        // Exibir a lista de alimentos
-        System.out.println("\nLista de Alimentos:");
-        for (Food food : foodList) {
-            System.out.println(food.getName());
-            System.out.println("Proteína: " + food.getProtein());
-            System.out.println("Carboidrato: " + food.getCarbohydrates());
-            System.out.println("Gordura: " + food.getFat());
-            System.out.println();
-        }
-
         // Loop de diálogo
         System.out.println("Digite suas perguntas sobre nutrição (ou 'sair' para encerrar):");
         String input = scanner.nextLine();
+
+        // Criar uma instância de Foods
+        Foods foods = new Foods();
 
         while (!input.equalsIgnoreCase("sair")) {
             // Processar a pergunta e fornecer a resposta da IA
@@ -69,6 +52,26 @@ public class Main {
 
             // Exibir a resposta
             System.out.println(respostaIA);
+
+            // Verificar se o usuário deseja uma nova tabela nutricional
+            if (input.equalsIgnoreCase("nova tabela")) {
+                // Carregar uma nova tabela nutricional
+                String filePath = "data/alimentos.csv";
+                foods.loadFoodsFromFile(filePath);
+
+                // Obter a nova lista de alimentos
+                List<Food> newFoodList = foods.getFoodList();
+
+                // Exibir a nova lista de alimentos
+                System.out.println("\nNova Lista de Alimentos:");
+                for (Food food : newFoodList) {
+                    System.out.println(food.getName());
+                    System.out.println("Proteína: " + food.getProtein());
+                    System.out.println("Carboidrato: " + food.getCarbohydrates());
+                    System.out.println("Gordura: " + food.getFat());
+                    System.out.println();
+                }
+            }
 
             // Solicitar a próxima pergunta
             input = scanner.nextLine();
@@ -98,5 +101,4 @@ public class Main {
 
         return resposta;
     }
-
 }
